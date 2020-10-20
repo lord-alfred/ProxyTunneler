@@ -43,7 +43,7 @@ exit_if_empty() {
     if [ -z "$1" ]
     then
         >&2 echo -e "== $2"
-        exit $1
+        exit 1
     fi
 }
 
