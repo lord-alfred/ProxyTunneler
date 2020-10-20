@@ -172,6 +172,7 @@ then
     do
         echo "socks5://${PROXY_AUTH_USER}:${PROXY_AUTH_PWD}@${IPV4_ADDR}:${PORT_ITER}" >> "${CURRDIR}/local_proxies.txt"
 
+        # FIXME: unknown command in `sh` (`bash` ok)
         ((PORT_ITER+=1))
     done
 fi
