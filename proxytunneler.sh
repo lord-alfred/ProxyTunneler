@@ -36,14 +36,14 @@ exit_if_not_equal_0() {
     if [ "$1" -ne '0' ]
     then
         >&2 echo -e "== $2"
-        exit 1
+        exit $1
     fi
 }
 exit_if_empty() {
     if [ -z "$1" ]
     then
         >&2 echo -e "== $2"
-        exit 1
+        exit $1
     fi
 }
 
